@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
   <link rel="manifest" href="./images/site.webmanifest">
-  <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="./images/" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
@@ -33,15 +33,18 @@
       <div class="header-content">
         <div class="nav">
           <ul class="nav-link">
-            <li><a href="#">contact</a></li>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">cases</a></li>
-            <li><a href="#">home</a></li>
+            <li class="nav-content-underline"><a href="#">contact</a></li>
+            <li class="nav-content-underline"><a href="#">about me</a></li>
+            <li class="nav-content-underline"><a href="#">projects</a></li>
+            <li class="nav-content-underline"><a href="#">cases</a></li>
+            <li class="nav-content-underline"><a href="#">home</a></li>
           </ul>
         </div>
 
-        <div class="main-content"><h1>front-end.web(developer)<span class="flicker">_</span></h1></div>
+        <div class="main-content">
+          <h1>front-end.web(developer)</h1>
+          <div id="flicker-text"></div>
+        </div>
 
         <div class="switch-mode">dark mode.</div>
       </div>
@@ -49,6 +52,7 @@
 
     <main></main>
     <footer></footer>
+    <script src="./flicker.js"></script>
   </div>
 </body>
 </html>
