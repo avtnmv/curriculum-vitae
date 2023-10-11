@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .logo{
   color: #000;
@@ -30,13 +30,13 @@
 .self-service{
   color: #000;
   font-family: Manrope;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
 }
-.content-underline p::after{
+.content-underline h2::after{
   display: block;
   content: "";
   width: 20px;
@@ -44,7 +44,7 @@
   background: #000;
   transition: 1s ease-in-out;
 }
-.content-underline p:hover::after{
+.content-underline h2:hover::after{
   width: 70%;
 }
 .header-content{
@@ -84,24 +84,11 @@
   border-right:  solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: 6.6px; /*.15em*/
   animation: 
     typing 3.5s steps(30, end),
     blink-caret 1s step-end infinite;
 }
-/* #flicker-text{
-  display: flex;
-  content: "";
-  background-color: #000;
-  width: 33px;
-  height: 5px;
-  margin-top: 53px;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: 
-    typing 3.7s steps(1, end)
-} */
-
 .switch-mode{
   display: flex;
   justify-content: space-between;
@@ -115,7 +102,6 @@
   font-weight: 800;
   line-height: normal;
 }
-
 .nav-content-underline a::after{
   display: block;
   content: "";
@@ -127,6 +113,10 @@
 .nav-content-underline a:hover:after{
   height: 70%;
 }
+.nav-content-underline a:hover{
+  transition: .4s;
+  text-shadow: 0 0 .60px black;
+}
 @keyframes typing{
   from { width: 0 }
   to { width: 100% }
@@ -134,7 +124,29 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: black }
-
 }
-
-
+.hr-line{
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #E7E7E7;
+  margin: 120px 0px;
+}
+.content-padding{
+  padding-left: 35px;
+  width: 250px;
+  margin-bottom: 120px;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.first-card{
+  background-color:#EEE;
+  margin-top: 30px;
+  margin-right: 35px;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 80px;
+}
