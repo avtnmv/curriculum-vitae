@@ -145,15 +145,13 @@
   margin-bottom: 120px;
 }
 .second-card{
-  margin-left: 20px;
+  margin-left: 21px;
   background-color:#EEE;
   margin-top: 30px;
   width: 600px;
   height: 300px;
   margin-bottom: 80px;
 }
-
-
 @media (max-width: 961px) {
   .card-container{
     display: flex;
