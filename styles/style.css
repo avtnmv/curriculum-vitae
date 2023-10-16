@@ -229,6 +229,6 @@ button{
     margin-right: 0px;
   }
   .self-service{
-    margin: auto;
+    margin-block-start: auto;
   }
 }
