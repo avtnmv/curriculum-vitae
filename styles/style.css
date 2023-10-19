@@ -252,7 +252,7 @@ button{
   }
 }
 @media (min-width: 961px){
-  .hh-menu{
+  .navbar-burger-unactive{
     display: none;
   }
 }
