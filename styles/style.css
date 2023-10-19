@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+  position: relative;
 }
 .logo{
   color: #000;
@@ -135,7 +136,6 @@
 .card-container{
   display: flex;
   justify-content: space-between;
-  /* display: none; */
 }
 .first-card{
   background-color:#EEE;
@@ -192,7 +192,48 @@ button{
 #card-container.is-hidden {
   animation: fadeOutFromBlock 0.5s ease-in-out;
 }
+.burger-menu-unactive{
+  width: 40px;
+  height: 28px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.burger-line{
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  height: 3px;
+}
+.burger-line-first{
+  top: 0;
+  transition: .3s linear;
+}
+.burger-line-second, .burger-line-third{
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .3s linear;
+}
+.burger-line-fourth{
+  bottom: 0;
+  transition: .3s linear;
+}
 
+.burger-menu-active{
+  .burger-line-first{
+    opacity: 0;
+  }
+  .burger-line-fourth{
+    opacity: 0;
+  }
+  .burger-line-second{
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .burger-line-third{
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
 @keyframes fadeInFromNone {
   0% {
     opacity: 0;
@@ -206,12 +247,15 @@ button{
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
-
+@media (min-width: 961px){
+  .hh-menu{
+    display: none;
+  }
+}
 @media (max-width: 961px) {
   .card-container{
     display: flex;
@@ -228,7 +272,22 @@ button{
   .first-card{
     margin-right: 0px;
   }
-  .self-service{
-    margin-block-start: auto;
+  .nav, .main-content, .self-service-hide{
+    display: none;
   }
+  .burger-menu-unactive{
+    display: block;
+  }
+}
+.navbar-burger-unactive {
+  text-align: right;
+  width: 100%;
+	height: 100%;
+	transform: translateX(100%);
+  margin-top: 5px;
+	transition: transform 0.5s; 
+}
+
+.navbar-burger-active {
+	transform: translateX(0);
 }
