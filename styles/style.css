@@ -19,7 +19,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
-
 }
 .logo{
   color: #000;
@@ -251,38 +250,7 @@ button{
     opacity: 0;
   }
 }
-@media (min-width: 961px){
-  .navbar-burger-unactive{
-    display: none;
-  }
-}
-@media (max-width: 961px) {
-  .card-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  #card-container.is-visible{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .first-card{
-    margin-right: 0px;
-  }
-  .nav, .main-content, .self-service-hide{
-    display: none;
-  }
-  .burger-menu-unactive{
 
-    display: block;
-  }
-  .logo{
-    padding-left: 0px;
-  }
-}
 .navbar-burger-unactive {
   text-align: right;
   width: 100%;
@@ -311,5 +279,41 @@ button{
   &:hover{
     transition: .4s;
     text-shadow: 0 0 .70px black;
+  }
+}
+
+@media (max-width: 961px) {
+  .card-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #card-container.is-visible{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .first-card{
+    margin-right: 0px;
+  }
+  .nav, .main-content, .self-service-hide{
+    display: none;
+  }
+  .burger-menu-unactive{
+
+    display: block;
+  }
+  .logo{
+    padding-left: 0px;
+  }
+  .header-logo{
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 961px){
+  .navbar-burger-unactive{
+    display: none;
   }
 }
