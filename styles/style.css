@@ -295,3 +295,21 @@ button{
 .navbar-burger-active {
 	transform: translateX(0);
 }
+.nav-links-burger{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.nav-links-burger li{
+  margin-top: 10px;
+}
+.nav-links-burger li a{
+  font-weight: 100;
+  font-size: 25px;
+  color: #000;
+  font-family: Manrope;
+
+  &:hover{
+    transition: .4s;
+    text-shadow: 0 0 .70px black;
+  }
+}
