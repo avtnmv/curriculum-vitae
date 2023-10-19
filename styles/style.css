@@ -15,11 +15,11 @@
 }
 .header-logo{
   display: flex;
+  align-items: baseline;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
-  position: relative;
+
 }
 .logo{
   color: #000;
