@@ -276,7 +276,11 @@ button{
     display: none;
   }
   .burger-menu-unactive{
+
     display: block;
+  }
+  .logo{
+    padding-left: 0px;
   }
 }
 .navbar-burger-unactive {
