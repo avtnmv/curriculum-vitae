@@ -37,17 +37,20 @@
   line-height: normal;
   cursor: pointer;
 }
-.content-underline p::after{
+
+.self-service::after{
   display: block;
   content: "";
-  width: 20px;
-  height: 1.5px;
   background: #000;
-  transition: 1s ease-in-out;
+  transition: 0.8s ease-in-out;
+  height: 1.5px;
+  width: 0px;
 }
-.content-underline p:hover::after{
-  width: 70%;
+.self-service:hover:after{
+  width: 80px
 }
+
+
 .header-content{
   display: flex;
   justify-content: space-between;
