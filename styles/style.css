@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  overflow-x: hidden;
 }
 .container{
   max-width: 1440px;
@@ -15,10 +14,9 @@
 }
 .header-logo{
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .logo{
   color: #000;
@@ -32,27 +30,23 @@
 .self-service{
   color: #000;
   font-family: Manrope;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   line-height: normal;
   cursor: pointer;
-  width: 250px;
-
-  /* underline-effect */
-  &::after{
-    display: block;
-    content: "";
-    width: 20px;
-    height: 1.5px;
-    background: #000;
-    transition: 1s ease-in-out;
-  }
-  &:hover::after{
-    width: 70px;
-  }
 }
-
+.content-underline p::after{
+  display: block;
+  content: "";
+  width: 20px;
+  height: 1.5px;
+  background: #000;
+  transition: 1s ease-in-out;
+}
+.content-underline p:hover::after{
+  width: 70%;
+}
 .header-content{
   display: flex;
   justify-content: space-between;
@@ -95,6 +89,7 @@
     typing 3.5s steps(30, end),
     blink-caret 1s step-end infinite;
 }
+
 .switch-mode{
   display: flex;
   justify-content: space-between;
@@ -108,6 +103,7 @@
   font-weight: 800;
   line-height: normal;
 }
+
 .nav-content-underline a::after{
   display: block;
   content: "";
@@ -119,17 +115,13 @@
 .nav-content-underline a:hover:after{
   height: 70%;
 }
-.nav-content-underline a:hover{
-  transition: .4s;
-  text-shadow: 0 0 .60px black;
-}
 
 .hr-line{
   display: block;
   height: 1px;
   width: 100%;
   background-color: #E7E7E7;
-  margin: 120px 0px;
+  margin: 100px 0px;
 }
 
 .card-container{
@@ -233,23 +225,6 @@ button{
     transform: translateY(-50%) rotate(-45deg);
   }
 }
-@keyframes fadeInFromNone {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOutFromBlock {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .navbar-burger-unactive {
   text-align: right;
@@ -282,6 +257,34 @@ button{
   }
 }
 
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutFromBlock {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing{
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+/*Media Queries*/
 @media (max-width: 961px) {
   .card-container{
     display: flex;
@@ -308,6 +311,10 @@ button{
   .logo{
     padding-left: 0px;
   }
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .header-logo{
     margin-bottom: 0px;
   }
@@ -317,3 +324,4 @@ button{
     display: none;
   }
 }
+
