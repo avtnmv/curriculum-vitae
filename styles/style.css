@@ -11,6 +11,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
+  overflow-x: hidden;
 }
 .header-logo{
   display: flex;
@@ -286,6 +287,9 @@ button{
 
 /*Media Queries*/
 @media (max-width: 961px) {
+  *{
+    overflow-x: hidden;
+  }
   .card-container{
     display: flex;
     align-items: center;
