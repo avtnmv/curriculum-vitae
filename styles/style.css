@@ -11,7 +11,6 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
-  overflow-x: hidden;
 }
 .header-logo{
   display: flex;
@@ -49,7 +48,6 @@
 .self-service:hover:after{
   width: 80px
 }
-
 
 .header-content{
   display: flex;
@@ -261,6 +259,65 @@ button{
   }
 }
 
+.self-service-align{
+  width: 150px;
+  margin: 0 0 100px auto;
+}
+.biography{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bio-text{
+  max-width: 700px;
+  margin-left: 40px;
+  h3{
+    color: #1F1F1F;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+  }
+  p{
+    color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  }
+}
+.bio-links{
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+  a{
+    color: #1F1F1F;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border: 1px solid #1F1F1F;
+    padding: 5px 15px;
+    border-radius: 50px;
+    transition: .7s;
+
+    &:hover{
+      cursor: pointer;
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
 @keyframes fadeInFromNone {
   0% {
     opacity: 0;
@@ -324,6 +381,26 @@ button{
   }
   .header-logo{
     margin-bottom: 0px;
+  }
+  .biography{
+    flex-direction: column;
+    .bio-text{
+      margin-left: 0px;
+    }
+    .bio-text h3{
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .bio-text p{
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .bio-links{
+      justify-content: center;
+    }
   }
 }
 @media (min-width: 961px){
