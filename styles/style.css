@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  /* scroll-behavior: smooth; */
 }
 
 .container{
@@ -12,7 +11,6 @@
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 10px;
 }
 .header-logo{
   display: flex;
@@ -269,6 +267,7 @@ button{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .bio-text{
@@ -317,6 +316,54 @@ button{
     background-color: black;
     color: white;
   }
+}
+.bio-tools{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-box{
+  width: 300px;
+  height: 75px;
+  border: 1px solid #E7E7E7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+  &:hover{
+    cursor: pointer;
+    transform: perspective(1000px) scale(0.97) translateZ(10px) rotateY(-10deg);
+    background-color: #E7E7E7;
+  }
+}
+
+.bio-vertical-line{
+  height: 45px;
+  width: 1px;
+  background-color: black;
+}
+.bio-box h2{
+  color: #000;
+  font-family: Manrope;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.bio-box p{
+  color: #000;
+  font-family: Manrope;
+  font-size: 13.5px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+.bio-tools-image{
+  height: 30px;
+  width: 30px;
 }
 
 @keyframes fadeInFromNone {
@@ -383,6 +430,7 @@ button{
     margin-bottom: 0px;
   }
   .biography{
+    margin-bottom: 0px;
     flex-direction: column;
     .bio-text{
       margin-left: 0px;
@@ -401,6 +449,12 @@ button{
     .bio-links{
       justify-content: center;
     }
+  }
+  .bio-tools{
+    flex-direction: column;
+  }
+  .bio-box{
+    margin-top: 40px;
   }
 }
 @media (min-width: 961px){
