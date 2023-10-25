@@ -306,7 +306,7 @@ button{
     text-transform: uppercase;
     margin-right: 20px;
     border: 1px solid #1F1F1F;
-    padding: 5px 15px;
+    padding: 5px 14px;
     border-radius: 50px;
     transition: .7s;
 
@@ -369,7 +369,6 @@ button{
     display: none;
   }
   .burger-menu-unactive{
-
     display: block;
   }
   .logo{
