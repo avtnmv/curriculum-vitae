@@ -272,49 +272,48 @@ button{
 .bio-text{
   max-width: 700px;
   margin-left: 40px;
-  h3{
-    color: #1F1F1F;
-    font-family: Manrope;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 25px;
-  }
-  p{
-    color: #1F1F1F;
+}
+.bio-text h3{
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+.bio-text p{
+  color: #1F1F1F;
   font-family: Manrope;
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
   line-height: 25px;
   }
-}
 .bio-links{
   height: 50px;
   margin-top: 20px;
   display: flex;
   align-items: center;
+}
+.bio-links a{
+  color: #1F1F1F;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 20px;
+  border: 1px solid #1F1F1F;
+  padding: 5px 14px;
+  border-radius: 50px;
+  transition: .7s;
 
-  a{
-    color: #1F1F1F;
-    font-family: Manrope;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-right: 20px;
-    border: 1px solid #1F1F1F;
-    padding: 5px 14px;
-    border-radius: 50px;
-    transition: .7s;
-
-    &:hover{
-      cursor: pointer;
-      background-color: black;
-      color: white;
-    }
+  &:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
   }
 }
 
