@@ -368,7 +368,64 @@ button{
 .contact-me .self-service{
 width: 150px;
 margin: auto;
-margin-bottom: 70px;
+margin-bottom: 60px;
+}
+
+.contact-me-icons{
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+}
+.footer-wrapper{
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.footer-wrapper p{
+  color: #1F1F1F;
+  text-align: right;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+.footer-wrapper a{
+  color: #1F1F1F;
+  text-align: right;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.footer-tag-underline::after{
+  display: block;
+  content: "";
+  height: 1.5px;
+  width: 0px;
+  background-color: #000;
+  transition: .8s ease-in-out;
+}
+.footer-tag-underline:hover:after{
+  width: 40px;
+}
+.footer-tag{
+  margin-top: 1.5px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.footer-div{
+  display: flex;
+}
+.footer-wrapper h4{
+  font-size: 33px;
 }
 
 @keyframes fadeInFromNone {
