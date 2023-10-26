@@ -524,15 +524,15 @@ margin-bottom: 60px;
     display: none;
   }
 }
-@media (max-width: 450px){
+@media (max-width: 461px){
   .footer-wrapper h4{
-    font-size: 25px;
+    font-size: 20git apx;
   }
   .footer-wrapper p{
   color: #1F1F1F;
   text-align: right;
   font-family: Manrope;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -541,7 +541,7 @@ margin-bottom: 60px;
   color: #1F1F1F;
   text-align: right;
   font-family: Manrope;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
