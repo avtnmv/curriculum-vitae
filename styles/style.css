@@ -526,7 +526,7 @@ margin-bottom: 60px;
 }
 @media (max-width: 461px){
   .footer-wrapper h4{
-    font-size: 20git apx;
+    font-size: 20px;
   }
   .footer-wrapper p{
   color: #1F1F1F;
@@ -548,5 +548,7 @@ margin-bottom: 60px;
 }
 .footer-tag{
   margin-top: 0px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
 }
 }
