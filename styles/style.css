@@ -365,6 +365,11 @@ button{
   height: 30px;
   width: 30px;
 }
+.contact-me .self-service{
+width: 150px;
+margin: auto;
+margin-bottom: 70px;
+}
 
 @keyframes fadeInFromNone {
   0% {

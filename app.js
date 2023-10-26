@@ -36,7 +36,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const duration = 700; // Продолжительность прокрутки в миллисекундах (например, 1000 миллисекунд = 1 секунда)
+      const duration = 500; // Продолжительность прокрутки в миллисекундах (например, 1000 миллисекунд = 1 секунда)
       const targetOffset = targetElement.getBoundingClientRect().top;
       const start = window.pageYOffset;
       const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
