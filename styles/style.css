@@ -531,23 +531,21 @@ margin-bottom: 60px;
   color: #1F1F1F;
   text-align: right;
   font-family: Manrope;
-  font-size: 13px;
+  font-size: 13.5px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
-  margin-top: 1.5px;
 }
 .footer-wrapper a{
   color: #1F1F1F;
   text-align: right;
   font-family: Manrope;
-  font-size: 13px;
+  font-size: 13.5px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
 }
 .footer-tag{
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 }
