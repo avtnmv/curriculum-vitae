@@ -43,10 +43,10 @@
   background: #000;
   transition: 0.8s ease-in-out;
   height: 1.5px;
-  width: 0px;
+  width: 40px;
 }
 .self-service:hover:after{
-  width: 80px
+  width: 100px
 }
 
 .header-content{
