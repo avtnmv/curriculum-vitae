@@ -1,0 +1,147 @@
+
+@media screen and (min-width: 1200px){
+  #projects{
+    margin-top: -200px;
+  }
+  #contact{
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 690px;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  #about{
+    margin-top: -120px;
+  }
+  #about h1{
+    margin-bottom: 20px;
+  }
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .nav-footer{
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  
+  #profile {
+    height: 83vh;
+    margin-bottom: 130px;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 80px;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {   
+    
+    font-size: 10px;
+    padding: 5px;
+    margin: 0;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  #about{
+    margin-top: -180px;
+  }
+  #about h1{
+    margin-bottom: 20px;
+  }
+
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .nav-footer{
+    justify-content: space-around;
+  }
+}
+
